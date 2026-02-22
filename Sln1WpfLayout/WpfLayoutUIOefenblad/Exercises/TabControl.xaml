@@ -10,12 +10,88 @@
 
     <Grid Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="250px"/>
+            <RowDefinition Height="250"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Frame x:Name="fraAssignment" Grid.Row="0" Grid.Column="0" Background="#eeeeee" />
-        <Border Background="#EEFDEF" BorderBrush="#6B6CB0" BorderThickness="1" Padding="12" Margin="20" Grid.Row="1">
-            <!-- TODO: PAS HIERONDER DE XAML AAN -->
+
+        <Frame x:Name="fraAssignment"
+               Grid.Row="0"
+               Background="#eeeeee" />
+
+        <Border Background="#EEFDEF"
+                BorderBrush="#6B6CB0"
+                BorderThickness="1"
+                Padding="12"
+                Margin="20"
+                Grid.Row="1">
+
+            <TabControl>
+
+                <!-- TAB 1 -->
+                <TabItem Header="Account">
+                    <Grid Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Content="Gebruikersnaam:"
+                               Grid.Row="0"
+                               Grid.Column="0"
+                               Margin="0,0,10,10"/>
+
+                        <TextBox Grid.Row="0"
+                                 Grid.Column="1"
+                                 Margin="0,0,0,10"/>
+
+                        <Label Content="Paswoord:"
+                               Grid.Row="1"
+                               Grid.Column="0"
+                               Margin="0,0,10,10"/>
+
+                        <PasswordBox Grid.Row="1"
+                                     Grid.Column="1"
+                                     Margin="0,0,0,10"/>
+
+                        <Button Content="Aanmelden"
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                HorizontalAlignment="Left"
+                                Padding="10,5"/>
+                    </Grid>
+                </TabItem>
+
+                <!-- TAB 2 -->
+                <TabItem Header="Voorkeuren">
+                    <StackPanel Margin="10">
+                        <CheckBox Content="Nieuwsbrief ontvangen"
+                                  Margin="0,0,0,10"/>
+                        <CheckBox Content="Meldingen inschakelen"
+                                  Margin="0,0,0,10"/>
+                        <CheckBox Content="Automatisch inloggen"
+                                  Margin="0,0,0,10"/>
+                        <CheckBox Content="Donkere modus gebruiken"/>
+                    </StackPanel>
+                </TabItem>
+
+                <!-- TAB 3 -->
+                <TabItem Header="Info">
+                    <TextBlock Margin="10" TextWrapping="Wrap">
+                        <Run FontWeight="Bold">Welkom bij deze applicatie.</Run>
+                        <LineBreak/>
+                        <LineBreak/>
+                        Dit is een eenvoudige demonstratie van een TabControl in WPF.
+                    </TextBlock>
+                </TabItem>
+
+            </TabControl>
         </Border>
     </Grid>
 </Page>
