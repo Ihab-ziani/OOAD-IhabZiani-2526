@@ -17,15 +17,15 @@
         <Frame x:Name="fraAssignment" Grid.Row="0" Grid.Column="0" Background="#eeeeee" />
         <!-- TODO: PAS HIERONDER DE XAML AAN -->
         <Grid Background="Beige" Grid.Row="1" Margin="20">
-            <Button Content="Eerste button" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Button Content="Tweede button" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button Content="Eerste button" Padding="8,3,8,3" Margin="30,20,0,0" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button Content="Tweede button" Padding="8,3,8,3" Margin="200,50,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </Grid>
         <StackPanel Grid.Row="2" Margin="20" Background="#FFC9E4FF">
-            <TextBlock FontSize="18" FontWeight="SemiBold">Welkom</TextBlock>
-            <TextBlock TextWrapping="Wrap" Background="#FFACCAE9">
+            <TextBlock Margin="20,20,20,10" FontSize="18" FontWeight="SemiBold">Welkom</TextBlock>
+            <TextBlock Padding="10" Margin="20,0,20,0" TextWrapping="Wrap" Background="#FFACCAE9">
                 Nu fransche afstands op verbouwd minstens onzuiver. Rente bezig te geval ad. Taiping tijdens zit aan zij regelen inhouds dit sneller vreezen. Alleen nog ruimte steeds bieden ook mei brusch men levert.
             </TextBlock>
-            <TextBlock FontSize="14" FontStyle="Italic">👉🏻 random opmerking</TextBlock>
+            <TextBlock Margin="40,20,0,10" FontSize="14" FontStyle="Italic">👉🏻 random opmerking</TextBlock>
         </StackPanel>
     </Grid>
 </Page>
