@@ -31,8 +31,8 @@
                 <!-- Listbox 1 -->
 
                 <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Button x:Name="btnToSelected" Content="→" Width="70" Height="30" Click="btnToSelected_Click" Margin="10" />
-                    <Button x:Name="btnToAvailable" Content="←" Width="70" Height="30" Click="btnToAvailable_Click" />
+                    <Button x:Name="btnToSelected" Content="→" Width="70" Height="30" Margin="10" />
+                    <Button x:Name="btnToAvailable" Content="←" Width="70" Height="30" />
                 </StackPanel>
                 <TextBlock Grid.Row="0" Grid.Column="2" Text="Geselecteerd" FontSize="16" FontWeight="SemiBold" Margin="10"/>
                 <!-- Listbox 2 -->

@@ -1,0 +1,71 @@
+<Page x:Class="WpfControlsOefenblad.Exercises.Welkom"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfControlsOefenblad.Exercises"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BasicTextBox">
+
+    <Grid MaxWidth="400" Margin="20">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="100" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Label -->
+        <Label x:Name="lblNaam"
+           Grid.Row="0"
+           Grid.Column="0"
+           Content="Naam:"
+           Margin="5"
+           Padding="5"/>
+
+        <!-- TextBox -->
+        <TextBox x:Name="txtNaam"
+             Grid.Row="1"
+             Grid.Column="0"
+             Margin="5"
+             Padding="5"/>
+
+        <!-- Button -->
+        <Button x:Name="btnVerzenden"
+            Grid.Row="1"
+            Grid.Column="1"
+            Content="OK"
+            Margin="5"
+            Padding="5"
+            Click="btnVerzenden_Click"/>
+
+        <!-- Foutmelding -->
+        <TextBlock x:Name="txtFout"
+               Grid.Row="2"
+               Grid.Column="0"
+               Text="Gelieve een naam in te vullen"
+               Margin="5"
+               Padding="5"
+               Foreground="#900"
+               FontStyle="Italic"
+               Visibility="Hidden"/>
+
+        <!-- Resultaat -->
+        <TextBlock x:Name="txtResultaat"
+               Grid.Row="3"
+               Grid.Column="0"
+               Text="..."
+               Margin="5"
+               Padding="5"
+               FontSize="16"
+               FontWeight="SemiBold"/>
+
+    </Grid>
+</Page>

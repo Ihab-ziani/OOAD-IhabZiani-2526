@@ -14,4 +14,9 @@ public partial class KlikMij : Page
     {
         InitializeComponent();
     }
+
+    private void btnKlikMij_Click(object sender, RoutedEventArgs e)
+    {
+        txtKlikMij.Text = "er is op de button geklikt";
+    }
 }

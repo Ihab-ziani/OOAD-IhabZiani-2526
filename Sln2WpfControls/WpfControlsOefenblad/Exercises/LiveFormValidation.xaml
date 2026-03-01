@@ -30,9 +30,9 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock Text="Paswoord:" VerticalAlignment="Center" Margin="10"/>
-                <TextBox x:Name="txtPaswoord" Grid.Column="1" Padding="5" Margin="10,0" />
+                <TextBox x:Name="txtPaswoord" Grid.Column="1" Padding="5" Margin="10,0" TextChanged="txtPaswoord_TextChanged" />
                 <TextBlock Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" FontStyle="Italic" Text="minstens 1 hoofdletter, 1 cijfer en 8 tekens lang" Opacity="0.7" Margin="10,5"/>
-                <Button x:Name="btnSave" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Right" Margin="10" Content="Opslaan" Padding="10,5" IsEnabled="False" Click="btnSave_Click"/>
+                <Button x:Name="btnSave" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Right" Margin="10" Content="Opslaan" Padding="10,5" IsEnabled="False" />
                 <Border Grid.Row="0" Grid.Column="2" Grid.RowSpan="3" Background="#FFF7D6" BorderBrush="#E6D39B" BorderThickness="1" CornerRadius="6" Padding="12" Margin="20,0,0,0">
                     <StackPanel>
                         <TextBlock Text="Status" FontSize="15" FontWeight="SemiBold" Margin="0,0,0,8"/>
